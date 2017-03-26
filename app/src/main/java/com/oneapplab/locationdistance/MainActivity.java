@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         LatLng fromPosition = new LatLng(23.4555453556, 11.145315551);
         LatLng toPosition = new LatLng(12.1115145311, 99.333455333);
         double distance = SphericalUtil.computeDistanceBetween(fromPosition,toPosition);
-        tv.setText("The distance between tho latlng is" + formatNumber(distance));
+        tv.setText("The distance between tho latlng is" +" "+ formatNumber(distance));
     }
     private String formatNumber(double distance) {
         String unit = "m";
